@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+naruto-web-app/node_modules
+naruto-web-app/.pnp
+naruto-web-app/.pnp.js
+
+# testing
+naruto-web-app/coverage
+
+# next.js
+naruto-web-app/.next/
+naruto-web-app/out/
+
+# production
+naruto-web-app/build
+
+# misc
+naruto-web-app/.DS_Store
+naruto-web-app/*.pem
+
+# debug
+naruto-web-app/npm-debug.log*
+naruto-web-app/yarn-debug.log*
+naruto-web-app/yarn-error.log*
+naruto-web-app/.pnpm-debug.log*
+
+# local env files
+naruto-web-app/.env*.local
+
+# vercel
+naruto-web-app/.vercel
+
+# typescript
+naruto-web-app/*.tsbuildinfo
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+naruto-api/node_modules
+naruto-api/.pnp
+naruto-api/.pnp.js
+
+# testing
+naruto-api/coverage
+
+# next.js
+naruto-api/.next/
+naruto-api/out/
+
+# production
+naruto-api/dist
+
+# misc
+naruto-api/.DS_Store
+naruto-api/*.pem
+
+# debug
+naruto-api/npm-debug.log*
+naruto-api/yarn-debug.log*
+naruto-api/yarn-error.log*
+naruto-api/.pnpm-debug.log*
+
+# local env files
+naruto-api/.env*.local
+
+# vercel
+naruto-api/.vercel
+
+# typescript
+naruto-api/*.tsbuildinfo
