@@ -18,4 +18,49 @@ kind delete clusters naruto-dev-cluster
 
 # Steps to Install Bitnami Sealed Secrets
 
-[Reference](https://gist.github.com/vfarcic/820aecf0799d679d9082eef00d07b515)
+Install `kubeseal` CLI via Homebrew using `brew install kubeseal`
+
+
+
+`kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.17.5/controller.yaml`
+
+
+## Sealing secrets 
+
+
+Default way 
+
+`kubectl --namespace default \
+    create secret \
+    generic mysecret \
+    --dry-run=client \
+    --from-literal foo=bar \
+    --output json`
+
+Sealed Secret way
+
+`kubectl --namespace default \
+    create secret \
+    generic mysecret \
+    --dry-run=client \
+    --from-literal foo=bar \
+    --output json \
+    | kubeseal \
+    | tee mysecret.yaml`
+
+
+Create secret
+
+`kubectl create \
+    --filename mysecret.yaml`
+
+Retrieve Secret 
+
+`kubectl get secret mysecret \
+    --output yaml`
+
+`kubectl get secret mysecret \
+    --output jsonpath="{.data.foo}" \
+    | base64 --decode && echo`
+
+`kubeseal --fetch-cert`
