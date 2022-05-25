@@ -1,7 +1,7 @@
 # Command to create a Dev Cluster
 
 ` 
-kind create cluster --config kind-dev.yaml  
+kind create cluster --config kind.yaml  
 `
 
 # Command to set the Kubectl Context 
