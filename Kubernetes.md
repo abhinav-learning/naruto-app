@@ -64,3 +64,11 @@ Retrieve Secret
     | base64 --decode && echo`
 
 `kubeseal --fetch-cert`
+
+# Local K8s Cluster Setup script
+
+`sh k8s-cluster-create.sh`
+
+# Local K8S Cluster Clean up script
+
+`sh k8s-cluster-delete.sh`
