@@ -10,16 +10,12 @@ It basically Provides the UI to see the details of various Naruto characters and
 
 ## Architecture
 
-![Architecture](naruto.drawio.svg)
+![Architecture](naruto.svg)
 
 ## Local Setup
 
 `Run docker compose up
 `
-
-## Kafka Docker Setup References
-
-[Kafka Docker](https://developer.confluent.io/quickstart/kafka-docker/)
 
 ## Deployment Strategy
 
