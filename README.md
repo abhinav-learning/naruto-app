@@ -10,7 +10,7 @@ It basically Provides the UI to see the details of various Naruto characters and
 
 ## Architecture
 
-![Architecture](naruto.svg)
+![Architecture](naruto.drawio.svg)
 
 ## Local Setup
 
