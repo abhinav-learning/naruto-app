@@ -70,3 +70,4 @@ naruto-api/.vercel
 # typescript
 naruto-api/*.tsbuildinfo
 git-story_media
+.node-version
